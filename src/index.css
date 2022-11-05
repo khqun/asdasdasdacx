@@ -1,0 +1,361 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navigation-bar nav {
+  padding-left: 18rem;
+}
+
+.nav-color {
+  background-color: #0d253f;
+}
+
+.nav-drop {
+  color: white;
+  font-weight: bold;
+}
+
+.homepage-searching-img {
+  background: linear-gradient(to right, rgba(13, 37, 63, 0.8), rgba(13, 37, 63, 0.8)), url('https://image-us.24h.com.vn/upload/2-2022/images/2022-05-09/Doctor-Strange-2-hut-20-ty--ngay-doctor-strange-multiverse-1280-1651093649295-16520-1652081546-633-width1280height720.jpg');
+  background-repeat: no-repeat;
+  background-size: 1390px auto;
+  background-position: right top;
+  width: 100%;
+  max-height: 500px;
+  min-width: 120px;
+  min-height: 360px;
+  display: flex;
+}
+
+.searching-wrapper {
+  padding-right: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px
+}
+
+.searching-wrapper .title h1,
+h3 {
+  color: white;
+  font-weight: bold;
+}
+
+.searchbar-wrapper .searching-bar {
+  padding: 12px;
+  padding-left: 30px;
+  color: black;
+  border-radius: 30px;
+  width: 100%;
+  border: 0;
+  height: 5vh;
+}
+
+.searchbar-wrapper .searching-bar:focus-visible {
+  outline: none;
+}
+
+.searchbar-wrapper .search-button {
+  background: linear-gradient(to right, rgba(144, 206, 161), rgba(1, 180, 228));
+  color: white;
+  border-radius: 30px;
+  border: 0;
+  height: 3rem;
+  width: 5rem;
+}
+
+.container-horitenzal {
+  overflow: auto;
+}
+
+.container-horitenzal button {
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+}
+
+
+.movie-card-img {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  width: 180px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.movie-card-img-wrapper:hover .overlay {
+  opacity: 1;
+}
+
+.movie-card-img-wrapper:hover .details {
+  position: absolute;
+  bottom: 0;
+  font-weight: bold;
+}
+
+.overlay {
+  background-color: rgba(20, 20, 20, .7);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  /* -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; */
+  border-radius: 10px;
+}
+
+.overview {
+  font-size: 10px;
+}
+
+.card-wrapper {
+  width: 100%
+}
+
+
+.wave-bg {
+  background-image: url("https://www.themoviedb.org/assets/2/v4/misc/trending-bg-39afc2a5f77e31d469b25c187814c0a2efef225494c038098d62317d923f8415.svg");
+  background-position: 45% 200px;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.moviecard-title {
+  color: black;
+  font-weight: bold;
+  font-size: large;
+
+}
+
+.section-title {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+.appropriate-button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.appropriate-button:focus {
+  outline: none !important;
+}
+
+.drop-link {
+  color: white;
+  font-weight: bold;
+}
+
+.movies-card-details {
+  padding: 12px;
+}
+
+.movies-card-details .title {
+  font-size: large;
+  color: black;
+  font-weight: bold;
+}
+
+.movies-card-details .title:hover {
+  color: darkblue;
+  text-decoration: none;
+}
+
+.movie-card-img-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.single-column {
+  max-width: 100%;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0;
+  background-image: radial-gradient(at 30% top, #031d33 0%, rgba(13, 37, 63, 1));
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+}
+
+.footer-logo {
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.rounded {
+  border-color: #fff;
+  background-color: #fff;
+  color: rgba(1, 180, 228, 1);
+  font-size: 1.3em;
+  font-weight: bold;
+  display: inline-block;
+  word-wrap: break-word;
+  white-space: normal;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 8px 16px;
+  transition: linear .1s;
+}
+
+.footer-links-wrapper {
+  color: white !important;
+  margin: 15px;
+}
+
+.footer-links-wrapper ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links-wrapper li a {
+  color: white !important;
+}
+
+.page-content {
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
+.overlay .details {
+  color: white;
+}
+
+.movie-list-card {
+  width: 220px;
+  margin: 10px;
+}
+
+.movie-list-card img {
+  width: 100%;
+}
+
+.movie-list-wrapper {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.arrow-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: cyan;
+  color: white;
+  border-radius: 50%;
+  border: 0;
+}
+
+.button-toggle {
+  text-align: center;
+}
+
+.page-button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.page-button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+.page-button:focus {
+  outline: 0;
+}
+
+.page-button:disabled {
+  background-color: #000;
+}
+
+.detail-background {
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.detail-body {
+  margin: 50px 0 50px 0;
+  padding: 40px;
+  display: flex;
+}
+
+.detail-img {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.tagline{
+  opacity: 0.7;
+}
+@media (min-width: 768px) {
+  .page-button {
+    padding: 0.25em 0.75em;
+  }
+}
+
+/* .hide {
+  opacity: 0;
+} */
